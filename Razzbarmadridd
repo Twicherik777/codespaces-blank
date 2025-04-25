@@ -1,0 +1,142 @@
+
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda Razz Bar</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #4B0082;
+      color: #FFD700;
+      line-height: 1.6;
+    }
+    header { background: #551A8B; padding: 1rem 2rem; }
+    header h2, header nav a { color: #FFD700; }
+    header nav { display: flex; justify-content: space-between; align-items: center; }
+    header nav a { text-decoration: none; margin-left: 1rem; }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem; }
+    .btn-primary {
+      background: #FFD700;
+      color: #4B0082;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .producto {
+      background: #6A0DAD;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1rem;
+    }
+    .producto img {
+      width: 100%;
+      height: auto;
+    }
+    .info {
+      padding: 0.5rem 1rem;
+      flex-grow: 1;
+    }
+    .producto h3 {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+    .precio {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+    .btn-comprar {
+      background: #FFD700;
+      color: #4B0082;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: auto;
+    }
+    #contacto { padding: 2rem; background: #551A8B; }
+    #contacto a { color: #FFD700; text-decoration: none; }
+    footer {
+      background: #551A8B;
+      text-align: center;
+      padding: 1rem 2rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Razz Bar</h2>
+    <nav>
+      <a href="#productos">Productos</a>
+      <a href="#sobre-nosotros">Sobre Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bienvenido a Razz Bar</h1>
+    <p>Disfruta de nuestros 16 deliciosos sabores, 30,000 puffs y experiencia inigualable.</p>
+    <a href="#productos" class="btn-primary">Ver Sabores</a>
+  </section>
+
+  <section id="productos" class="productos">
+    <!-- Cada producto con enlace a WhatsApp -->
+    <!-- Solo muestro algunos, tú puedes copiar el bloque y editar el sabor -->
+    <div class="producto">
+      <img src="triple_melon.jpg" alt="Triple Melon">
+      <div class="info">
+        <h3>Razz Bar - Triple Melon</h3>
+        <div class="precio">12,00 €</div>
+        <a href="https://wa.me/34689315840?text=Hola,%20quiero%20comprar%20el%20sabor:%20Triple%20Melon" class="btn-comprar" target="_blank">Comprar</a>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="strawberry_ice.jpg" alt="Strawberry Ice">
+      <div class="info">
+        <h3>Razz Bar - Strawberry Ice</h3>
+        <div class="precio">12,00 €</div>
+        <a href="https://wa.me/34689315840?text=Hola,%20quiero%20comprar%20el%20sabor:%20Strawberry%20Ice" class="btn-comprar" target="_blank">Comprar</a>
+      </div>
+    </div>
+
+    <!-- Repite esto mismo con cada sabor y su imagen correspondiente -->
+
+  </section>
+
+  <section id="sobre-nosotros" style="padding: 2rem;">
+    <h2>Sobre Nosotros</h2>
+    <p>En <strong>Razz Bar</strong> ofrecemos la mejor experiencia en vapes desechables, con tecnología de malla, recarga Type-C y 30,000 puffs de sabor intenso.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Ll�manos al <strong>+34 689 31 58 40</strong> o escr�benos a <a href="mailto:info@razzbar.shop">info@razzbar.shop</a>.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Razz Bar. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
+
