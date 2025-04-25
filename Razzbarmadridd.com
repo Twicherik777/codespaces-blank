@@ -129,7 +129,7 @@
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>Ll�manos al <strong>+34 689 31 58 40</strong> o escr�benos a <a href="mailto:info@razzbar.shop">info@razzbar.shop</a>.</p>
+    <p>Llamanos al <strong>+34 689 31 58 40</strong> o escribenos a <a href="mailto:info@razzbar.shop">+34 689 31 58 40</a>.</p>
   </section>
 
   <footer>
